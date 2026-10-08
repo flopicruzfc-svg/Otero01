@@ -1,0 +1,9 @@
+# Configuración mínima para la CLI de Supabase.
+project_id = "gestion-estudio"
+
+# "Aceptar invitación" se usa sin sesión: la autorización es el token de un solo uso.
+[functions.accept-invitation]
+verify_jwt = false
+
+[functions.send-invitation]
+verify_jwt = true
